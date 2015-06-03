@@ -81,8 +81,6 @@
 		D0EDC3AD1B1F405B00A263AB /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				D0EDC3B21B1F405B00A263AB /* AppDelegate.h */,
-				D0EDC3B31B1F405B00A263AB /* AppDelegate.m */,
 				D0EDC3B51B1F405B00A263AB /* ViewController.h */,
 				D0EDC3B61B1F405B00A263AB /* ViewController.m */,
 				D0EDC3B81B1F405B00A263AB /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		D0EDC3AE1B1F405B00A263AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0EDC3B21B1F405B00A263AB /* AppDelegate.h */,
+				D0EDC3B31B1F405B00A263AB /* AppDelegate.m */,
 				D0EDC3AF1B1F405B00A263AB /* Info.plist */,
 				D0EDC3B01B1F405B00A263AB /* main.m */,
 			);

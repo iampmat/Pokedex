@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,57 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-Gs-w7L">
+                                <rect key="frame" x="163" y="104" width="275" height="391"/>
+                                <state key="normal" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="204" width="275" height="391"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kGx-cF-Ssm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="oGY-Gs-w7L" secondAttribute="centerY" id="4Af-9c-eG8"/>
+                            <constraint firstItem="oGY-Gs-w7L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="PxI-nE-HS1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oGY-Gs-w7L" secondAttribute="bottom" constant="150" id="UF6-em-Ot5"/>
+                            <constraint firstItem="oGY-Gs-w7L" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="150" id="a60-z4-aOd"/>
+                            <constraint firstAttribute="centerX" secondItem="oGY-Gs-w7L" secondAttribute="centerX" id="m6M-my-Ow8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oGY-Gs-w7L" secondAttribute="trailing" constant="34" id="qKN-9e-064"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Af-9c-eG8"/>
+                                <exclude reference="PxI-nE-HS1"/>
+                                <exclude reference="a60-z4-aOd"/>
+                                <exclude reference="m6M-my-Ow8"/>
+                                <exclude reference="qKN-9e-064"/>
+                                <exclude reference="UF6-em-Ot5"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4Af-9c-eG8"/>
+                                <include reference="PxI-nE-HS1"/>
+                                <include reference="a60-z4-aOd"/>
+                                <include reference="m6M-my-Ow8"/>
+                                <include reference="qKN-9e-064"/>
+                                <include reference="UF6-em-Ot5"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="197" y="394.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardfront" width="200" height="273"/>
+    </resources>
 </document>
