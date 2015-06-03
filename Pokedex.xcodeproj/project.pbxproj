@@ -14,6 +14,7 @@
 		D0EDC3BC1B1F405B00A263AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EDC3BB1B1F405B00A263AB /* Images.xcassets */; };
 		D0EDC3BF1B1F405B00A263AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EDC3BD1B1F405B00A263AB /* LaunchScreen.xib */; };
 		D0EDC3CB1B1F405B00A263AB /* PokedexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EDC3CA1B1F405B00A263AB /* PokedexTests.m */; };
+		D0EDC3D61B1F7EA100A263AB /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EDC3D51B1F7EA100A263AB /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D0EDC3C41B1F405B00A263AB /* PokedexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EDC3C91B1F405B00A263AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EDC3CA1B1F405B00A263AB /* PokedexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokedexTests.m; sourceTree = "<group>"; };
+		D0EDC3D41B1F7EA100A263AB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		D0EDC3D51B1F7EA100A263AB /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				D0EDC3B51B1F405B00A263AB /* ViewController.h */,
 				D0EDC3B61B1F405B00A263AB /* ViewController.m */,
 				D0EDC3B81B1F405B00A263AB /* Main.storyboard */,
+				D0EDC3D71B1F7EAE00A263AB /* Model */,
 				D0EDC3BB1B1F405B00A263AB /* Images.xcassets */,
 				D0EDC3BD1B1F405B00A263AB /* LaunchScreen.xib */,
 				D0EDC3AE1B1F405B00A263AB /* Supporting Files */,
@@ -117,6 +121,15 @@
 				D0EDC3C91B1F405B00A263AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0EDC3D71B1F7EAE00A263AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0EDC3D41B1F7EA100A263AB /* Card.h */,
+				D0EDC3D51B1F7EA100A263AB /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				D0EDC3B71B1F405B00A263AB /* ViewController.m in Sources */,
 				D0EDC3B41B1F405B00A263AB /* AppDelegate.m in Sources */,
 				D0EDC3B11B1F405B00A263AB /* main.m in Sources */,
+				D0EDC3D61B1F7EA100A263AB /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
