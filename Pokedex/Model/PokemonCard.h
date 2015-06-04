@@ -1,5 +1,5 @@
 //
-//  Card.h
+//  PokemonCard.h
 //  Pokedex
 //
 //  Created by Patrick Matherly on 6/3/15.
@@ -8,12 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Card : NSObject
+@interface PokemonCard : NSObject
 
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *type;
+@property (nonatomic) int HP;
 
-@property (nonatomic, getter=isChosen) BOOL chosen;
-@property (nonatomic, getter=isMatched) BOOL matched;
-
-- (int)match:(NSString *)otherCards;
 @end

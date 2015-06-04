@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-Gs-w7L">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="cardButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-Gs-w7L">
                                 <rect key="frame" x="163" y="104" width="275" height="391"/>
                                 <state key="normal" backgroundImage="cardfront">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,13 +29,31 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kGx-cF-Ssm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="&lt;                      Swipe                    &gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWv-Ob-j6t">
+                                <rect key="frame" x="163" y="503" width="275" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="kQA-Zu-SvZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="prI-En-ICT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isj-H7-q7q">
+                                <rect key="frame" x="478" y="28" width="90" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="oGY-Gs-w7L" secondAttribute="centerY" id="4Af-9c-eG8"/>
                             <constraint firstItem="oGY-Gs-w7L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="PxI-nE-HS1"/>
+                            <constraint firstItem="hWv-Ob-j6t" firstAttribute="top" secondItem="oGY-Gs-w7L" secondAttribute="bottom" constant="8" id="TVe-R1-bXh"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oGY-Gs-w7L" secondAttribute="bottom" constant="150" id="UF6-em-Ot5"/>
                             <constraint firstItem="oGY-Gs-w7L" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="150" id="a60-z4-aOd"/>
+                            <constraint firstAttribute="centerX" secondItem="hWv-Ob-j6t" secondAttribute="centerX" id="lIh-fu-nY1"/>
                             <constraint firstAttribute="centerX" secondItem="oGY-Gs-w7L" secondAttribute="centerX" id="m6M-my-Ow8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oGY-Gs-w7L" secondAttribute="trailing" constant="34" id="qKN-9e-064"/>
                         </constraints>
@@ -60,10 +78,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="oGY-Gs-w7L" id="1tv-8F-45e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="394.5"/>
+            <point key="canvasLocation" x="197" y="394"/>
         </scene>
     </scenes>
     <resources>

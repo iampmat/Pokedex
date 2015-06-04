@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D6DB7ACF-032D-43EF-A1E1-C8EB32D03A90</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Pokedex</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>315D7B2EAEC1034797E6B174A8A40826F79339FD</key>
 		<string>https://github.com/iampmat/Pokedex.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Pokedex.xcodeproj/project.xcworkspace</string>
+	<string>Pokedex.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>315D7B2EAEC1034797E6B174A8A40826F79339FD</key>
